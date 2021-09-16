@@ -1,0 +1,35 @@
+
+{% load static %}
+<!-- MENU SIDEBAR-->
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="#">
+            <img src="{% static 'dashboard/images/icon/logo.png' %}" alt="Cool Admin" />
+        </a>
+    </div>
+    <div class="menu-sidebar__content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar__list">
+                <li class="active">
+                    <a href="{% url 'main_page' %}"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+
+                <li class="active">
+                    <a href="{% url 'blog_list' %}"><i class="fas fa-tachometer-alt"></i>Blog</a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'recipe_list' %}"><i class="fas fa-tachometer-alt"></i>Recipe</a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'followers_list' %}"><i class="fas fa-tachometer-alt"></i>Followers</a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'authors_list' %}"><i class="fas fa-tachometer-alt"></i>Authors</a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- END MENU SIDEBAR-->

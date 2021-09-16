@@ -1,0 +1,6 @@
+
+# for db
+create user delicious_user with password 'root'
+create database delicious_db owner delicious_user;
+
+
